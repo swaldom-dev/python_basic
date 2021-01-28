@@ -7,3 +7,20 @@
 
 # для получения числа с помощью input() используйте такую конструкцию
 a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+
+# 1
+print((a + b) / (c + d))
+
+# 2
+sum_ = (a + b) / (c + d)
+print("Result:", sum_)
+
+# 3
+e = a + b
+f = c + d
+result = e / f
+
+print("Result:", result)

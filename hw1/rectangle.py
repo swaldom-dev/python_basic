@@ -7,3 +7,30 @@
 """
 
 a = int(input('Введите сторону a: '))
+b = int(input('Введите сторону b: '))
+perimeter = (a + b) * 2
+area = a * b
+print('Периметр: ', perimeter)
+print('Площадь: ', area)
+
+
+# 2
+print('Периметр прямоугольника =', 2 * (a + b))
+print('Площадь прямоугольника =', a * b)
+
+
+# 3
+P = 2 * (a + b)
+S = a * b
+
+print("Периметр прямокутника:", P)
+print("Площа прямокутника:", S)
+
+# 4
+side_a = int(input('Введите сторону a: '))
+side_b = int(input('Введите сторону b: '))
+perimeter = side_a * 2 + side_b * 2
+area = side_a * side_b
+
+print('Периметр прямоугольника равен:', perimeter)
+print('Площать прямоугольника равна:', area)
