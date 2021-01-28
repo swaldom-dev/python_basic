@@ -29,3 +29,12 @@ print(answer, '(standart if-else)')
 answer = 'positive' if a > 0 else 'negative' if a < 0 else 'zero'
 
 print(answer, '(string if-else)')
+
+
+# Создание переменной в условии if c помощью оператора :=
+
+a = 10
+b = 20
+
+if (result := a + b) > 25:
+    print(result)

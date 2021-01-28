@@ -9,17 +9,6 @@ deleted = False
 print(active, type(active))  # True <class 'bool'>
 print(deleted, type(deleted))  # False <class 'bool'>
 
-
-"""
-    Тип данных NoneType
-    Для хранения пустых значений используется None
-"""
-
-status = None
-
-print(status, type(status))  # None <class 'NoneType'>
-
-
 """
     bool находится в подмножестве int, поэтому преобразовывается в числа
     и для него доступны все арифметические операции, как и для чисел
@@ -47,3 +36,12 @@ print(bool(b))  # True
 print(bool(''))  # False
 print(bool(' '))  # True
 print(bool([0, 0, 0]))  # True
+
+"""
+    Тип данных NoneType
+    Для хранения пустых значений используется None
+"""
+
+status = None
+
+print(status, type(status))  # None <class 'NoneType'>

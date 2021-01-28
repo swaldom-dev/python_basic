@@ -58,3 +58,15 @@ status = None
 print(active is False)  # False
 print(deleted is not None)  # True
 print(status is None)  # True
+
+result = None
+
+a = 20
+b = 20
+if a < b:
+    result = 10
+elif a == b:
+    result = 0
+
+if result is not None:  # если делать условие if result, тогда 0 не пройдет
+    print(result)
