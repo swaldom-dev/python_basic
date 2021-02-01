@@ -10,6 +10,12 @@
 """
 
 limit = int(input("Предел: "))
+number = 1
+
+while (result := number ** 2) < limit:
+    print(result)
+    number += 1
+
 
 """
     2. Вывести на экран последовательность чисел
@@ -25,3 +31,8 @@ limit = int(input("Предел: "))
 
 p = int(input("Введите степень: "))
 limit = int(input("Предел: "))
+number = 1
+
+while (result := number ** p) < limit:
+    print(result)
+    number += 1
