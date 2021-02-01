@@ -4,22 +4,22 @@
 """
 
 number = int(input("Введите число: "))
-biggest = 0
-even = 0
-odd = 0
+biggest = 0  # переменная для хранения наибольшей цифры
+even = 0  # счетчик для четных чисел
+odd = 0  # счетчик для нечетных чисел
 
-while number > 0:
-    last_digit = number % 10
+while number > 0:  # пока число больше 0 заходим в цикл
+    last_digit = number % 10  # получаем последнюю цифру числа
 
-    if last_digit % 2 == 0:
-        even += 1
+    if last_digit % 2 == 0:  # если кратное двум - четное
+        even += 1  # увеличиваем счетчик четных
     else:
-        odd += 1
+        odd += 1  # увеличиваем счетчик нечетных чисел
 
-    if last_digit > biggest:
-        biggest = last_digit
+    if last_digit > biggest:  # если цифра больше, чем хранимая наибольшая
+        biggest = last_digit  # перезаписываем
 
-    number //= 10
+    number //= 10  # делим нацело на 10, обрезаем крайнюю цифру от числа
 
 print("biggest:", biggest)
 print("even:", even)

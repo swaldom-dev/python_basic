@@ -15,7 +15,7 @@ while number < 5:
     number += 1
 
 while True:
-    if number == 20:
+    if number == 10:
         break  # завершает работу цикла
 
     if number % 2 == 0:
