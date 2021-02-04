@@ -22,6 +22,9 @@ print('ABC' > 'a')  # False
 print(ord('A'))  # 65
 print(ord('a'))  # 97
 
+# Обратная функция chr - получить символ из кода
+print(chr(97))  # 'a'
+
 # Оператор in и not in. Нужен для проверки вхождения подстроки в строку
 print('ello' in a)  # True
 print('worl' not in b)  # False

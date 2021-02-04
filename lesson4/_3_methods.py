@@ -6,7 +6,7 @@
     Вызывается метод через . (точку) после объекта.
     Например вызов метода upper() у строки 'python':
     'python'.upper()  # PYTHON
-Чтобы посмотреть методы нужного объекта используйте функцию dir()
+    Чтобы посмотреть методы нужного объекта используйте функцию dir()
 
     print(dir(str)) - выведет все методы строк.
 
@@ -30,15 +30,15 @@ print(s.replace('World', 'python'))  # Hello python!
 # ____________________________________________________________
 # upper - возводит всю строку к верхнему регистру
 # lower - к нижнему
+# swapcase - меняет все регистры на противоположные
 # title - первую букву каждого слова к верхнему регистру
 # capitalize - первую букву к верхнему, а остальные - к нижнему
-# swapcase - меняет все регистры на противоположные
 print(s)  # Hello World!
 print(s.upper())  # HELLO WORLD!
 print(s.lower())  # hello world!
+print(s.swapcase())  # hELLO wORLD!
 print(s.title())  # Hello World!
 print(s.capitalize())  # Hello world!
-print(s.swapcase())  # hELLO wORLD!
 
 
 # Методы для поиска первого вхождения подстроки в строку
@@ -52,6 +52,7 @@ print(s.find('llo'))  # 2
 print(s.find('P'))  # -1
 print(s.rfind('l'))  # 9
 print(s.index('l'))  # 2
+print(s.rindex('l'))  # 2
 # print(s.index('P'))  # ValueError
 print(s.count('o'))  # 2
 
@@ -73,6 +74,7 @@ print(string.rstrip())  #    Hello world
 # isalpha - только из букв
 # isnumeric - только из чисел
 # isalnum - только и букв и цифр
+# isspace - только пробельные символы
 print('123'.isdigit())  # True
 print('½'.isdigit())  # False
 print('½'.isnumeric())  # True
@@ -83,8 +85,9 @@ print(' \n \t'.isspace())  # True
 
 # Методы для проверки регистра элементов строки
 # _____________________________________________
-# isupper, islower, istitle
+# isupper, islower, istitle, iscapitalize
 print('ABC'.islower())  # False
+print('ABC'.isupper())  # True
 
 
 # Методы для проверки начала и конца строки
