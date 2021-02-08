@@ -28,8 +28,6 @@ else:
     print("366")
 
 # 3 вариант с обработкой возможных ошибок
-
-year = input("year: ")
 try:
     year = int(year)
 except ValueError:
@@ -39,3 +37,14 @@ else:
         print(366)
     else:
         print(365)
+
+# 4 вариант. Обработка ошибок без try-except
+year = input("year: ")
+if year.isdigit():
+    year = int(year)
+    if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+        print(366)
+    else:
+        print(365)
+else:
+    print(year, "is not a valid year")

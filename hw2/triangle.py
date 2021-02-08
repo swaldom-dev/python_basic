@@ -19,7 +19,20 @@ if a + b > c and b + c > a and c + a > b:
 else:
     print("Triangle (", a, b, c, ") does not exists.")
 
-# 2 вариант (с обработкой возможных ошибок)
+# 2 вариант
+a = int(input("a= "))
+b = int(input("b= "))
+c = int(input("c= "))
+if a >= b + c:
+    print("Not exist", a, b, c)
+elif b >= a + c:
+    print("Not exist", a, b, c)
+elif c >= b + a:
+    print("Not exist", a, b, c)
+else:
+    print("Exist", a, b, c)
+
+# 3 вариант (с обработкой возможных ошибок)
 a = input("a = ")
 b = input("b = ")
 c = input("c = ")
