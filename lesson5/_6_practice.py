@@ -9,6 +9,15 @@
 """
 
 
+def capitalize(string):
+    return string[0].upper() + string[1:].lower()
+
+
+print(capitalize('hello world'))  # 'Hello world'
+print(capitalize('hello WoRld'))  # 'Hello world'
+print(capitalize('HeLLo WoRld'))  # 'Hello world'
+
+
 """
     Написать функцию, которая возводит число a в степень b.
 """
