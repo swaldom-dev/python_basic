@@ -5,28 +5,14 @@
     2. Вывести самое длинное слово и его длину.
 """
 
-# string = input('Enter a string: ')
-
-# "Hello, world!"
-
-# words = string.split()
-# print(len(words))
-
-# longest_word = ''
-# for word in words:
-#     if len(word) > len(longest_word):
-#         longest_word = word
-
-# print(longest_word)
-
 # Ниже описаны некоторые варианты решения задачи.
 
 # 1 вариант
-string = input('Enter a string: ')
+string = input("Enter a string: ")
 
 counter = 0  # счетчик слов
-word = ''  # переменная для текущего слова
-longest_word = ''  # самое длинное слово
+word = ""  # переменная для текущего слова
+longest_word = ""  # самое длинное слово
 
 for char in string:
     if char.isalpha():
@@ -38,7 +24,7 @@ for char in string:
         if len(word) > len(longest_word):
             # если длина текущего слова больше самого длинного - заменяем
             longest_word = word
-        word = ''  # очищаем текущее слово
+        word = ""  # очищаем текущее слово
 else:
     # этот блок выполнится после цикла. можем обработать последнее слово
     if word:
@@ -46,31 +32,31 @@ else:
         if len(word) > len(longest_word):
             longest_word = word
 
-print('1.', counter)
-print('2.', longest_word)
+print("1.", counter)
+print("2.", longest_word)
 
 
 # 2 вариант (с регулярными выражениями)
 import re
 
-string = input('Enter a string: ')
+string = input("Enter a string: ")
 
-words = re.findall(r'\w+', string)  # получаем список слов
+words = re.findall(r"\w+", string)  # получаем список слов
 
-longest_word = ''
+longest_word = ""
 for word in words:
     if len(word) > len(longest_word):
         longest_word = word
 
-print('1.', len(words))  # длина списка = количество слов
-print('2.', longest_word)
+print("1.", len(words))  # длина списка = количество слов
+print("2.", longest_word)
 
 
 # 3 вариант (темы следующих уроков)
-string = input('Enter a string: ')
+string = input("Enter a string: ")
 
-words = re.findall(r'\w+', string)  # получаем список слов
+words = re.findall(r"\w+", string)  # получаем список слов
 longest_word = max(words, key=len)  # получаем самое длинное слово из списка
 
-print('1.', len(words))
-print('2.', longest_word)
+print("1.", len(words))
+print("2.", longest_word)
