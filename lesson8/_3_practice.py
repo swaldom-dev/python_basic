@@ -6,6 +6,17 @@
     2. Напишите пару тестов к функции.
 """
 
+
+def dict_counter(text):
+    data = {}
+
+    for char in text:
+        if char not in data:
+            data[char] = text.count(char)
+
+    return data
+
+
 text = (
     "Proin laoreet dui vel libero dapibus vehicula vitae eget turpis."
     "Nam non eros eu elit posuere posuere id ac turpis."
@@ -13,6 +24,9 @@ text = (
     "Vivamus at odio at lacus viverra luctus et ut mauris."
     "Etiam vehicula nibh eu quam feugiat tempus."
 )
+assert dict_counter(text)["P"] == 1
+assert dict_counter(text)["i"] == 25
+assert dict_counter("a,a,a,a")["a"] == 4
 
 
 """
