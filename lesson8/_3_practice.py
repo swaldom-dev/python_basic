@@ -33,3 +33,20 @@ assert dict_counter("a,a,a,a")["a"] == 4
     Напишите функцию, которая принимает текст и возвращает информацию о том,
     сколько в тексте согласных (consonant) и гласных (vowel) букв.
 """
+
+# Создаем список с гласными (потому что их меньше)
+vowel_chars = ["a", "e", "i", "o", "u", "y"]
+
+
+def dict_counter(text):
+    counter = {"vowel": 0, "consonant": 0}
+    # counter = dict.fromkeys(['vowel', 'consonant'], 0)
+    for char in text:
+        if char in vowel_chars:  # если есть в списке - гласная
+            counter["vowel"] += 1
+        elif char.isalpha():  # иначе - согласная
+            counter["consonant"] += 1
+    return counter
+
+
+print(dict_counter(text))
