@@ -42,7 +42,7 @@ get_full_name(**user_dict)
 get_full_name(name="Jane", surname="Adams")
 
 
-# Еще примеры
+# Еще примеры распаковки * и **
 
 
 def func(a, b, c):
